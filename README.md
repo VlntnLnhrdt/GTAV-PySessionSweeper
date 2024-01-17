@@ -1,2 +1,2 @@
 # GTAV-PySessionSweeper
-A very small py-script to pause GTAV for a few seconds. This results in a "Session Sweep", because GTAV will disconnect you from the server as a result of the timeout. After those seconds GTAV will resume and you will habe a empty Lobby.
+A very small Python-Script to have an empty session. The GTAV process will pause for a few seconds, resulting in a timeout. For you it looks like everybody else left, for everybody else it looks like you left.
