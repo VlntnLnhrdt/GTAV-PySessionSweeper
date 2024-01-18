@@ -1,3 +1,2 @@
 @echo off
-python3 ".\aGSS.py" 10
-pause
+python3 "D:\Programme\dev\GTA Session Sweeper\GSS.py" 10
