@@ -2,13 +2,16 @@ import psutil
 import time
 import sys
 
-if len(sys.argv) < 2:
-    print("Bitte einen Integer beim Starten mitgeben.")
-    pid = 10
-else:
-    s = int(sys.argv[1])
+s = 10
+
+if len(sys.argv) >= 2:
+    try:
+        s = int(sys.argv[1])
+    except ValueError:
+        print("input is not a valid integer, time set to 10")
     
-print(f"Prozess wird für {s} Sekunden angehalten.")
+    
+print(f"process will be paused for {s} seconds.")
 process_name = 'GTA5.exe'
 pid = 0
 
@@ -20,9 +23,9 @@ for proc in psutil.process_iter():
 if pid != 0:
     proc = psutil.Process(pid)
     proc.suspend()
-    print ("Prozess pausiert")
+    print ("process paused")
     time.sleep(s)
-    print ("Prozess fortgeführt")
+    print ("process continued")
     proc.resume()
 else:
-    print("Prozess nicht gefunden")
+    print("process not found")

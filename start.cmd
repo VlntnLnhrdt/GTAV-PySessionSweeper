@@ -1,2 +1,3 @@
 @echo off
-python3 "D:\Gitprojekte\GTAV-SessionSweeper\GSS.py" 10
+python3 ".\aGSS.py" 10
+pause
