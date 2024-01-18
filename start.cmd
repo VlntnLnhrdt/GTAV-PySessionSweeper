@@ -1,2 +1,2 @@
 @echo off
-python3 "D:\Programme\dev\GTA Session Sweeper\GSS.py" 10
+python3 "D:\Gitprojekte\GTAV-SessionSweeper\GSS.py" 10
